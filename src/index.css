@@ -30,6 +30,7 @@ grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+  white-space: pre-wrap;
 }
 
 .note-footer{
@@ -62,4 +63,40 @@ textarea:focus{
 .save:hover{
   background-color: #ffb13c;
   cursor:pointer;
+}
+
+.delete-icon{
+  cursor:pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: #f2d8b1;
+  border-radius:5px;
+  padding:5px;
+  margin-bottom: 1.5em;
+}
+
+.search input{
+  border:none;
+  background-color: #f2d8b1;
+}
+
+.search input:focus{
+  
+  outline:none;
+}
+
+.Header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: black;
+}
+
+.dark-mode h1{
+  color:white;
 }
